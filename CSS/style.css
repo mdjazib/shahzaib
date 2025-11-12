@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+    border: 1px double blue;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+}
+
+div {
+    background-color: rgb(255, 32, 32);
+    height: 50px;
+    width: 50px;
+}
+
+.rect {
+    width: 400px;
+    background-color: pink;
+}
+
+.burger {
+    background-color: yellow;
+}
+
+.radius {
+    border-radius: 100px;
+    border: 2px solid;
+}
