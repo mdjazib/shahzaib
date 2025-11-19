@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo,
+.footer,
+.nav,
+.box,
+.block {
+    background-color: pink;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    max-width: max-content;
+}
+
+.boxes {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    height: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.block {
+    width: unset;
+    height: 200px;
+    min-width: 200px;
+    flex-grow: 1;
+}
