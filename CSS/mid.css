@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.parent {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 90px 0px 0px 100px;
+}
+
+.child {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    scale: 1.2;
+    transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(0deg);
+    transform: skewX(-30deg) skewY(10deg);
+}
+
+.header {
+    background-color: rgba(128, 128, 128, 0.714);
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+.cta {
+    transition: .4s ease;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: red;
+    padding: 20px;
+    cursor: crosshair;
+    color: white;
+}
+
+.cta:hover {
+    background-color: blue;
+    border-radius: 100px;
+}
