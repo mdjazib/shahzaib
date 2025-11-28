@@ -1,0 +1,17 @@
+.black {
+    background-color: black;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+#hero {
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+}
+
+#zero{
+    height: 20px;
+    background-color: pink;
+}
