@@ -80,6 +80,36 @@ header .hamburger svg {
     width: 20px;
 }
 
+main .block {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: calc(100svh - 74.2px);
+}
+
+main .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+main .col .col {
+    flex-direction: column;
+}
+
+@media (max-width:1000px) {
+    main {
+        flex-direction: column;
+    }
+}
+
 @media (max-width:880px) {
 
     header ul,
