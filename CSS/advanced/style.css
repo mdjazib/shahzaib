@@ -1,0 +1,55 @@
+ul ul {
+    display: none;
+}
+
+.dropdown li {
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    color: red;
+}
+
+.nested li {
+    color: black;
+}
+
+.dropdown li:hover ul {
+    display: block;
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    transition: .2s ease;
+    border: 2px solid tomato;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.road {
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.ball {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    animation: walking .2s alternate infinite
+}
+
+@keyframes walking {
+    100% {
+        margin-left: 500px;
+        background-color: tomato;
+        border-radius: 0px;
+        scale: .5;
+    }
+}
