@@ -1,0 +1,21 @@
+.parent {
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    rotate: 45deg;
+}
