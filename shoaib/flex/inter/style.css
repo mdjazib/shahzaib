@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    height: 200px;
+    background-color: #efefef;
+    border: 1px solid #cfcfcf;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
