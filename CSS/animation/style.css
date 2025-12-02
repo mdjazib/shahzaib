@@ -1,0 +1,92 @@
+.loader {
+    width: 20px;
+    height: 20px;
+    animation: loading .6s linear infinite;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100svh;
+    background-color: #191919;
+    gap: 50px;
+}
+
+* {
+    margin: 0;
+}
+
+@keyframes loading {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.pulse {
+    background-color: #f15;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    animation: glow 1s alternate infinite;
+    scale: 4;
+}
+
+@keyframes glow {
+    100% {
+        scale: 20;
+        background-color: #191919;
+    }
+}
+
+.one,
+.two {
+    border: 1px solid #f15;
+    border-radius: 100px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: pulse 1s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+.two {
+    animation: pulse-two 1s linear infinite;
+    animation-delay: .8s;
+}
+
+@keyframes pulse {
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-two {
+    100% {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(40px);
+}
