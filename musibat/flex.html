@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+</head>
+
+<body>
+    <div class="city">
+        <div class="road">
+            <div class="civic"></div>
+            <div class="civic"></div>
+        </div>
+        <div class="road">
+            <div class="civic"></div>
+            <div class="civic"></div>
+        </div>
+    </div>
+    <style>
+        .city {
+            background-color: pink;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        .road {
+            background-color: #f15;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .civic {
+            background-color: #000;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</body>
+
+</html>
