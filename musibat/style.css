@@ -1,0 +1,45 @@
+.box {
+    height: 400px;
+    background-color: pink;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.block {
+    background-color: #000;
+    width: 100px;
+    height: 100px;
+}
+
+.box>.block {
+    position: absolute;
+}
+
+.top-left {
+    top: 0px;
+    left: 0px;
+}
+
+.top-right {
+    right: 0px;
+    top: 0px;
+}
+
+.bottom-left {
+    bottom: 0px;
+    left: 0px;
+}
+
+.bottom-right {
+    right: 0px;
+    bottom: 0px;
+}
+
+.col {
+    background-color: rgb(245, 179, 190);
+    display: flex;
+    justify-content: space-between;
+}
