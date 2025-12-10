@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+
+<body>
+    <div class="civic"></div>
+    <div class="city">
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100svh;
+            background-color: #000000;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .city {
+            background-color: #000000cc;
+            height: calc(100svh - 5.5px);
+            position: fixed;
+            width: calc(100vw - 4px);
+            backdrop-filter: blur(350px);
+        }
+
+        .civic {
+            background-color: #f15;
+            width: 400px;
+            height: 400px;
+            animation: civic .8s linear infinite;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            filter: blur(50px);
+        }
+
+        @keyframes civic {
+            20% {
+                left: calc(100% - 400px);
+            }
+
+            40% {
+                left: calc(100% - 400px);
+                top: 0px;
+            }
+
+            60% {
+                top: calc(100% - 400px);
+                left: calc(100% - 400px);
+            }
+
+            80% {
+                left: 0px;
+                top: calc(100% - 400px);
+            }
+
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</body>
+
+</html>
