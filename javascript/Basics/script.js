@@ -164,21 +164,21 @@
 
 // functions
 
-function shoaib(time) {
-    if (time === 12) console.log("shoaib raat ko 12 bjy code k puchy ga");
-}
+// function shoaib(time) {
+//     if (time === 12) console.log("shoaib raat ko 12 bjy code k puchy ga");
+// }
 
-shoaib(11);
+// shoaib(11);
 
-function sum(...str) { return str.sort() }
-console.log(sum("b", "c", "a", "z", "x"));
+// function sum(...str) { return str.sort() }
+// console.log(sum("b", "c", "a", "z", "x"));
 
-function date(d = new Date().toLocaleDateString()) {
-    console.log(d);
-}
+// function date(d = new Date().toLocaleDateString()) {
+//     console.log(d);
+// }
 
-date("18/12/2025");
-date();
+// date("18/12/2025");
+// date();
 
 
 // const bulb = () => {
@@ -187,7 +187,165 @@ date();
 
 // bulb();
 
-const newfn = function () { return 54 };
-console.log(newfn());
+// const newfn = function () { return 54 };
+// console.log(newfn());
 
 
+// button()
+
+// function button(state = true) {
+//     console.log(`bulb is ${state ? "on" : "off"}`);
+// }
+
+
+// const button = (state) => {
+//     console.log(`bulb is ${state ? "on" : "off"}`);
+// }
+
+// button()
+
+// const bulb = function led(state) { console.log(`bulb is ${state ? "on" : "off"}`); }
+// bulb()
+
+// const sort = (...params) => {
+//     console.log(params.sort());
+// }
+
+// sort("b", "c", "d", "x", "w");
+
+
+// const firstClass = function circuit(fn) {
+//     return fn;
+// }
+
+// console.log(
+//     firstClass(
+//         function () {
+//             return 200
+//         }
+//     )()
+// );
+
+// function board() {
+//     return function () {
+//         return 200;
+//     }
+// }
+
+// console.log(board()());
+
+
+// let num = 0;
+// const counter = () => {
+//     console.log(++num);
+// }
+// counter();
+
+// function parent(a = 0) {
+//     const num = a;
+//     return function (n = 0) {
+//         return num + n;
+//     }
+// }
+
+// console.log(parent(18)(10));
+
+// function parent(a = 0) {
+//     const num = a;
+//     return function (n = 0) {
+//         const second = num + n;
+//         return function (m = 0) {
+//             return second * m;
+//         }
+//     }
+// }
+
+// console.log(parent(2)(2)(2));
+
+// (
+//     function run() {
+//         console.log("running");
+//     }
+// )()
+
+// (
+//     run = () => {
+//         console.log("running");
+//     }
+// )()
+
+const colors = ["red", "pink", "blue", "yellow", "tomato", "black", "aqua"];
+const numbers = [1, 20, 18, 15, 12, 8, 3, 2, 5, 4, 88];
+
+// insert one in last
+// colors.push("black");
+// remove one from last
+// colors.pop();
+
+// remove one from start
+// colors.shift();
+// insert one in start
+// colors.unshift("tomato");
+
+// delete or add in the original array
+// colors.splice(1, 4);
+// colors.splice(4, 0, "purple");
+
+// slice of an array in new array
+// const newColors = colors.slice(3, 5);
+
+// console.log(numbers.sort((a, b) => { return a - b }));
+
+// console.log(colors);
+
+// const newColors = [...colors];
+// console.log(newColors);
+
+// for (let i = 0; i < colors.length; i++) {
+//     console.log(colors[i]);
+// }
+
+// numbers.forEach((n) => {
+//     console.log(n * 4);
+// })
+
+// console.log(newNumbers);
+
+// const newNumbers = numbers.map((n) => {
+//     return n * 8;
+// })
+
+// console.log(newNumbers);
+
+// const newNumbers = numbers.filter((n) => {
+//     return n >= 20;
+// })
+
+// console.log(newNumbers);
+
+// const newNumbers = numbers.reduce((a, b) => {
+//     return a + b;
+// })
+
+// console.log(newNumbers);
+
+// const findColor = colors.find((a) => {
+//     return a === "yellow";
+// })
+
+// console.log(findColor);
+
+// console.log(colors.indexOf("yellow"));
+
+
+// const newNumbers = numbers.some((n) => {
+//     return n > 20;
+// })
+
+// console.log(newNumbers);
+
+// const newNumbers = numbers.every((n) => {
+//     return n >= 1;
+// })
+
+// console.log(newNumbers);
