@@ -8,7 +8,21 @@
 </head>
 
 <body>
+    <button onclick='alert("hello")'>Alert</button>
+    <button onclick='hideMe(this)'>Hide me</button>
+    <button onclick="toggleGreetings()">Toggle Greetings</button>
+    <div class="toggle">Hi Good Morning</div>
     <script src="script.js"></script>
+    <style>
+        .greetings {
+            display: none;
+        }
+
+        .toggle {
+            font-size: 40px;
+            color: #f15;
+        }
+    </style>
 </body>
 
 </html>

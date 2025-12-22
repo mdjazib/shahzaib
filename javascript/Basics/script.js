@@ -349,3 +349,54 @@ const numbers = [1, 20, 18, 15, 12, 8, 3, 2, 5, 4, 88];
 // })
 
 // console.log(newNumbers);
+
+
+// const obj = {
+//     name: "shahzaib",
+//     age: 20,
+//     gender: "male",
+//     father: {
+//         name: "",
+//         cnic: "",
+//         number: "",
+//         business: {
+//             name: "Tesla",
+//             income: ""
+//         }
+//     }
+// }
+// let objKey = "age";
+// console.log(obj[objKey]);
+
+// const business = obj.father.business;
+// console.log(business.name);
+
+// // const newObj = { ...obj };
+// const newObj = JSON.parse(JSON.stringify({ ...obj }));
+// newObj.name = "new";
+// newObj.father.business.name = "Meta";
+// console.log(newObj);
+// console.log(obj);
+
+// for (const key in obj) {
+//     console.log(`${key} - ${JSON.stringify(obj[key])}`);
+// }
+
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));
+
+const hideMe = (e) => {
+    e.remove();
+}
+
+// function enterYourName(){
+
+// }
+
+const toggleGreetings = () => {
+    const greetings = document.querySelector(".toggle");
+    // greetings.style.backgroundColor = "blue";
+    greetings.classList.toggle("greetings");
+}
+
