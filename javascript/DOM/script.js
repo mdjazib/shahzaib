@@ -25,3 +25,8 @@ box.addEventListener("mouseover", () => {
 box.addEventListener("mouseleave", () => {
     box.style.borderRadius = "0%";
 })
+
+const cls = (e) => {
+    // e.className = "ok"
+    e.classList.toggle("etc");
+}
