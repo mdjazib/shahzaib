@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <div class="one">One</div>
+    <div class="one">One</div>
+    <div id="two">Two</div>
+    <hr>
+    <button onclick="button(true)">On</button>
+    <button onclick="button(false)">Off</button>
+    <hr>
+    <button onclick="changeMyColor(this)">Change my color</button>
+    <hr>
+    <div class="box"></div>
+    <style>
+        .box {
+            transition: .2s ease;
+            background-color: #efefef;
+            cursor: pointer;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+
+</html>
