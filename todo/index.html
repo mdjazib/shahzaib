@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>📋 My tasks</h1>
+    <div class="tasks">
+        <div class="task">
+            <div class="add">
+                <span>➕</span>
+                <span>Add a task</span><br>
+                <input type="text" placeholder="Try typing 'Buy milk'" onchange="todoInput(this)">
+            </div>
+            <div class="arrow">➡️</div>
+        </div>
+        <h4>To do</h4>
+        <div class="todo"></div>
+        <h4 class="text hide">Completed</h4>
+        <div class="completed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

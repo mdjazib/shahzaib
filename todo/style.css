@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body h1 {
+    padding: 10px;
+    color: #fff;
+    font-size: 35px;
+}
+
+body h4 {
+    color: #fff;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+body .tasks,
+body .tasks .todo,
+body .tasks .completed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+body .tasks .task:nth-child(1):hover {
+    border: 1px solid #eee;
+}
+
+body .task .checkbox {
+    padding: 2px 5px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    font-size: 10px;
+}
+
+body .tasks .task .arrow {
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+body .tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 800px;
+    padding: 20px 25px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+body .tasks .task p {
+    color: white;
+    width: 100%;
+}
+
+body .tasks .task input {
+    background-color: #333;
+    border: none;
+    font-size: 20px;
+    width: 630px;
+    color: #fff;
+}
+
+body .tasks .task input:focus {
+    outline: none;
+}
+
+body .tasks .task .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 8px;
+    font-size: 18px;
+}
+
+body .task span {
+    color: #fff;
+    white-space: nowrap;
+}
+
+body .tasks .task .button {
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4.5px;
+    background-color: transparent;
+    border-radius: 100px;
+    font-size: 8px;
+    user-select: none;
+}
+
+body .tasks .task:hover .button {
+    overflow: hidden;
+    border: 2px solid red;
+    color: red;
+}
+
+body .tasks .task .checkbox {
+    color: transparent;
+    user-select: none;
+}
+
+body .tasks .task:hover .checkbox {
+    color: #fff;
+}
+
+body .tasks .task .checkbox span-s {
+    color: #fff;
+}
+
+.cup {
+    cursor: pointer;
+}
+
+body .tasks .completed .task .checkbox {
+    color: white;
+}
+
+.completed .task p {
+    text-decoration: line-through;
+}
+
+.hide{
+    display: none;
+}
