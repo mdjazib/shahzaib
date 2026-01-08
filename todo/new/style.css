@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body header {
@@ -54,6 +55,7 @@ body main {
   body main .col {
     min-width: calc(100vw - 40px);
     scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 }
 body main .col {
@@ -108,6 +110,7 @@ body main .col .task p select {
   outline: none;
   color: #5e5e5e;
   text-transform: capitalize;
+  background-color: transparent;
 }
 body main .col .task p select option {
   font-size: 12px;

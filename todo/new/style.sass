@@ -3,6 +3,7 @@
     padding: 0
     box-sizing: border-box
     font-family: Arial, Helvetica, sans-serif
+    -webkit-tap-highlight-color: transparent
 
 body
     header
@@ -46,6 +47,7 @@ body
             .col
                 min-width: calc(100vw - 40px)
                 scroll-snap-align: center
+                scroll-snap-stop: always
         .col
             display: flex
             flex-direction: column
@@ -93,6 +95,7 @@ body
                         outline: none
                         color: #5e5e5e
                         text-transform: capitalize
+                        background-color: transparent
                         option
                             font-size: 12px
                             &:nth-last-child(1)

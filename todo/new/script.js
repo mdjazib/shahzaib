@@ -1,7 +1,7 @@
 const todoParent = document.querySelector(".todo");
 const createTask = () => {
     const task = prompt("Write you task below:");
-    createTaskInternal(task, "todo");
+    if (task?.trim()) createTaskInternal(task, "todo");
 }
 const createTaskInternal = (content, state) => {
 
