@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+body header h2 {
+  font-size: 14px;
+}
+body header .create {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body header .create .line {
+  background-color: black;
+  position: absolute;
+  width: 1.5px;
+  height: 50%;
+  border-radius: 100px;
+}
+body header .create .line:nth-last-child(1) {
+  rotate: 90deg;
+}
+body main {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: calc(100svh - 70px);
+  border-radius: 25px 25px 0px 0px;
+  padding: 20px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 980px) {
+  body main {
+    overflow-x: overlay;
+    scroll-snap-type: x mandatory;
+  }
+  body main .col {
+    min-width: calc(100vw - 40px);
+    scroll-snap-align: center;
+  }
+}
+body main .col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: overlay;
+}
+body main .col .head {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  position: sticky;
+  top: 0px;
+}
+body main .col .head h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+body main .col:nth-child(1) .head {
+  background-color: #202020;
+}
+body main .col:nth-child(2) .head {
+  background-color: #e8a71a;
+}
+body main .col:nth-child(3) .head {
+  background-color: #2cc5a9;
+}
+body main .col:nth-child(4) .head {
+  background-color: #f3435d;
+}
+body main .col .task {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 7px;
+}
+body main .col .task p {
+  font-size: 12px;
+  color: #5e5e5e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+body main .col .task p select {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #5e5e5e;
+  text-transform: capitalize;
+}
+body main .col .task p select option {
+  font-size: 12px;
+}
+body main .col .task p select option:nth-last-child(1) {
+  color: #f15;
+}
+body main .col .task h4 {
+  font-size: 13px;
+  color: #1b1b1b;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
