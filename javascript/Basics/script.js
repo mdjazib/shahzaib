@@ -84,6 +84,19 @@
 // Control Flow:
 // 0-if else else if
 
+// if (!(2 === 4) && 2 === 2) {
+//     console.log("Condition true ha");
+// }
+// const day = "saturday";
+
+// if (day === "sunday") {
+//     console.log("Clg is close");
+// } else if (day === "saturday") {
+//     console.log("Clg is close");
+// } else {
+//     console.log("Clg is open");
+// }
+
 // const age = Number(prompt("Enter your age:"));
 // if (age >= 18 && typeof age === 'number') {
 //     console.log("License");
@@ -126,14 +139,21 @@
 // 2-early return pattern
 
 // function button(state) {
-//     return state === true;
+//     return !state === true;
 // }
+
+// console.log(button(false));
 
 // Loops
 // 0- for
 // let myclass = 46;
 // for (let i = 0; myclass >= i; i++) {
 //     console.log(`Welcome new student: ${i}`);
+// }
+
+// const table = 8;
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${table} x ${i} = ${table * i}`);
 // }
 
 // const table = 9;
@@ -164,6 +184,22 @@
 
 // functions
 
+// sum(2, 5, 90)
+// function sum(...values) {
+//     // console.log(values.reduce((a, b) => a + b));
+//     values.forEach((num) => {
+//         for (let i = 1; i <= 10; i++) {
+//             console.log(`${num} x ${i} = ${num * i}`);
+//         }
+//     })
+// }
+
+// const fatArrow = () => {
+//     console.log("Hi Fat Arrow");
+// }
+// fatArrow();
+
+
 // function shoaib(time) {
 //     if (time === 12) console.log("shoaib raat ko 12 bjy code k puchy ga");
 // }
@@ -180,7 +216,6 @@
 // date("18/12/2025");
 // date();
 
-
 // const bulb = () => {
 //     console.log("fat arrow function");
 // }
@@ -189,7 +224,6 @@
 
 // const newfn = function () { return 54 };
 // console.log(newfn());
-
 
 // button()
 
@@ -213,6 +247,11 @@
 
 // sort("b", "c", "d", "x", "w");
 
+// const sum = (a = 0, b = 0) => {
+//     return a + b;
+// }
+
+// console.log(sum());
 
 // const firstClass = function circuit(fn) {
 //     return fn;
@@ -224,6 +263,16 @@
 //             return 200
 //         }
 //     )()
+// );
+
+// const fc = (a) => { return a() }
+
+// console.log(
+//     fc(
+//         function () {
+//             return 200
+//         }
+//     )
 // );
 
 // function board() {
@@ -274,6 +323,10 @@
 //     }
 // )()
 
+// (() => {
+//     console.log("Hello");
+// })()
+
 const colors = ["red", "pink", "blue", "yellow", "tomato", "black", "aqua"];
 const numbers = [1, 20, 18, 15, 12, 8, 3, 2, 5, 4, 88];
 
@@ -300,6 +353,9 @@ const numbers = [1, 20, 18, 15, 12, 8, 3, 2, 5, 4, 88];
 
 // const newColors = [...colors];
 // console.log(newColors);
+
+// const [c1, c2, ...values] = ["white", "black", "red", "orange", "purple", "pink"];
+// console.log(values);
 
 // for (let i = 0; i < colors.length; i++) {
 //     console.log(colors[i]);
@@ -399,4 +455,3 @@ const toggleGreetings = () => {
     // greetings.style.backgroundColor = "blue";
     greetings.classList.toggle("greetings");
 }
-

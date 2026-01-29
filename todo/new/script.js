@@ -56,6 +56,8 @@ const createTaskInternal = (content, state, def = true, id = Date.now(), taskDat
 }
 
 const storeCurrentTasks = (e) => {
+    console.log(e);
+
     const date = e.children[0].innerText.slice(0, 10);
     const content = e.children[1].innerText;
     const status = e.children[0].children[0];
@@ -71,7 +73,7 @@ const storeCurrentTasks = (e) => {
     localStorage.setItem("tasks", JSON.stringify(prevTasks));
 }
 
-const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+const tasks = JSON.parse(localStorage.getItem("tasks"))?.reverse() || [];
 tasks.forEach((task) => {
     createTaskInternal(task.content, task.status, def = false, id = task.id, taskDate = task.date);
 });

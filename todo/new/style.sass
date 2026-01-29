@@ -44,6 +44,8 @@ body
         @media (max-width:980px)
             overflow-x: overlay
             scroll-snap-type: x mandatory
+            &::-webkit-scrollbar
+                display: none
             .col
                 min-width: calc(100vw - 40px)
                 scroll-snap-align: center
@@ -53,6 +55,8 @@ body
             flex-direction: column
             gap: 15px
             overflow-y: overlay
+            &::-webkit-scrollbar
+                display: none
             .head
                 width: 100%
                 padding: 12px 15px

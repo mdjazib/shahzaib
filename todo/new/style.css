@@ -52,6 +52,9 @@ body main {
     overflow-x: overlay;
     scroll-snap-type: x mandatory;
   }
+  body main::-webkit-scrollbar {
+    display: none;
+  }
   body main .col {
     min-width: calc(100vw - 40px);
     scroll-snap-align: center;
@@ -63,6 +66,9 @@ body main .col {
   flex-direction: column;
   gap: 15px;
   overflow-y: overlay;
+}
+body main .col::-webkit-scrollbar {
+  display: none;
 }
 body main .col .head {
   width: 100%;
